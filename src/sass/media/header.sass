@@ -1,0 +1,59 @@
+@media screen and (min-width: $desktop-size-m1)
+    .header__top
+        border-radius: 0 0 30px 30px
+
+@media screen and (max-width: $desktop-size-m3)
+    .header__content,
+    .header__top
+        padding-right: 50px
+        padding-left: 50px
+
+@media screen and (max-width: $desktop-size-s1)
+    .header__search-input
+        padding: 10px 15px
+        min-width: 200px
+
+    .header__search-select
+        padding: 10px 5px
+        font-size: 12px
+        margin-right: 10px
+
+    .header__search-button::before
+        right: 175px
+
+@media screen and (max-width: $tablet-size-m1)
+    .header
+        text-align: center
+
+@media screen and (max-width: $tablet-size-s2)
+    .header__top-text,
+    .header__top-language,
+    .header__top-login
+        font-size: 13px
+
+    .header__top-text
+        display: flex
+        align-items: center
+
+    .header__top-language
+        margin-right: 10px
+
+    .header__top-login
+        margin-left: 10px
+
+@media screen and (max-width: $phone-size-l2)
+    .header__top-text
+        display: none
+
+    .header__top
+        justify-content: center
+
+@media screen and (max-width: $phone-size-m2)
+    .header__content,
+    .header__top
+        padding-right: 20px
+        padding-left: 20px
+
+    .header__search-input
+        width: 120px
+        min-width: 120px

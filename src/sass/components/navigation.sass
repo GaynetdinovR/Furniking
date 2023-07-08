@@ -1,0 +1,29 @@
+.navigation
+    padding: 25px 180px 25px 0
+
+    background-color: rgba($grey, 0.2)
+
+    width: 100%
+
+
+
+    &__list
+        display: flex
+        justify-content: center
+        align-items: center
+
+        position: relative
+        z-index: 2
+
+    &__item
+        margin-right: 65px
+
+
+    &__link
+        @include font($ff: $rubik, $fw: 400, $fz: 16px, $c: $dark-grey)
+
+        &:hover
+            filter: invert(50%)
+
+    &__item:last-child
+        margin-right: 0

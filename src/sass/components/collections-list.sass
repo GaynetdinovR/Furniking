@@ -1,0 +1,65 @@
+.collections-list
+    display: inline-flex
+    justify-content: center
+    align-items: flex-start
+    flex-direction: column
+
+    grid-row: 2 span
+
+    position: relative
+    z-index: 2
+
+    &__title
+        min-width: 265px
+        max-width: 265px
+
+        padding: 25px 40px
+
+        background-color: $green
+
+        display: flex
+        justify-content: center
+        align-items: center
+
+        @include font($ff: $rubik, $fw: 500, $fz: 16px, $c: $white)
+
+    &__title-img
+        max-width: 24px
+
+        margin-right: 20px
+
+        object-fit: contain
+
+    &__list
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        flex-direction: column
+
+    &__item
+        min-width: 265px
+        max-width: 265px
+
+    &__button
+        min-width: 100%
+
+        text-align: left
+
+        padding: 12px 30px
+
+        border-radius: 0
+        border: none
+        border-bottom: 1px $grey solid
+
+        background-color: rgba($grey, 0.2)
+
+        cursor: pointer
+        
+        @include font($ff: $rubik, $fw: 400, $fz: 14px, $c: $dark-grey)
+
+        &:hover
+            filter: invert(20%)
+
+    &__item:last-child
+        .collections-list__button
+            border-bottom: none

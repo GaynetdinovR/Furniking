@@ -1,0 +1,84 @@
+@media screen and (max-width: $desktop-size-m2)
+    .content
+        padding-right: 50px
+        padding-left: 50px
+
+@media (min-width: $desktop-size-s2) and (max-width: $desktop-size-m2)
+    .wrapper
+        grid-template-rows: 50px 440px
+        grid-template-columns: 225px 800px
+
+@media (min-width: $desktop-size-s1) and (max-width: $desktop-size-s2)
+    .wrapper
+        grid-template-rows: 40px 372px
+        grid-template-columns: 180px 700px
+
+@media (min-width: $tablet-size-m1) and (max-width: $desktop-size-s1)
+    .wrapper
+        grid-template-rows: 40px 372px
+        grid-template-columns: 700px
+
+@media (min-width: $tablet-size-m1) and (max-width: $desktop-size-m3)
+    .products
+        grid-template-columns: repeat(6, 105px)
+        grid-template-rows: repeat(3, 1fr)
+
+        justify-items: center
+
+    .product
+        max-width: 210px
+
+    .product__img-wrap
+        width: 210px
+        height: 220px
+
+    .product:nth-child(7)
+        grid-column: 2 / span 2
+
+        max-width: 210px
+
+    .product:nth-child(8)
+        grid-column: 4 / span 2
+
+        max-width: 210px
+
+    @for $i from 1 through 6
+        .product:nth-child(#{$i})
+            grid-column: 2 span
+
+@media (min-width: $phone-size-l2) and (max-width: $tablet-size-m1)
+    .wrapper
+        grid-template-rows: 40px 570px
+        grid-template-columns: 540px
+
+@media screen and (max-width: $tablet-size-m1)
+    .wrapper
+        margin-top: 30px
+
+    .products
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(4, 1fr)
+
+@media (min-width: $phone-size-l2) and (max-width: $tablet-size-s1)
+    .wrapper
+        grid-template-rows: 40px 570px
+        grid-template-columns: 400px
+
+@media screen and (max-width: $phone-size-l2)
+    .wrapper
+        grid-template-rows: 40px 570px
+        grid-template-columns: 280px
+
+@media screen and (max-width: $tablet-size-s1)
+    .content
+        padding-left: 10px
+        padding-right: 10px
+
+@media screen and (max-width: $desktop-size-m3)
+    .products
+        grid-gap: 30px 10px
+
+@media screen and (max-width: $phone-size-l1)
+    .products
+        grid-template-columns: repeat(1, 1fr)
+        grid-template-rows: repeat(8, 1fr)

@@ -1,0 +1,73 @@
+.trending
+    margin-top: 120px
+    
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    &__title
+        @include font($ff: $mulish, $fw: 700, $fz: 36px, $c: $dark-grey)
+
+    &__nav
+        margin-top: 45px
+
+        &-list
+            display: flex
+            align-items: center
+            justify-content: center
+
+        &-item
+            margin-right: 70px
+
+        &-link
+            @include font($ff: $mulish, $fw: 600, $fz: 24px, $c: $grey)
+
+            cursor: default
+
+            &_active
+                color: $green
+
+            &:not(.trending__nav-link_active)
+                cursor: pointer
+                
+                &:hover
+                    color: $dark-grey
+                    opacity: 0.5
+             
+        &-item:last-child
+            margin-right: 0
+
+    &__content
+        margin-top: 75px
+
+    &__controls
+        display: flex
+        align-items: center
+        justify-content: center
+
+        margin-top: 55px 
+
+    &__control
+        background: transparent
+        border: none
+
+        width: 30px
+        height: 30px
+
+        filter: brightness(0%) invert(80%)
+
+
+        &_active
+            filter: none
+
+        &:not(.trending__control_active)
+            cursor: pointer
+
+            &:hover
+                filter: brightness(0%) invert(65%)
+
+    &__control-img
+        object-fit: contain
+
+        max-width: 100%

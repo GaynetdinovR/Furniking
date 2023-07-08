@@ -1,0 +1,133 @@
+.special-offer
+
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    margin-top: 100px
+
+    &__title 
+        @include font($ff: $mulish, $fw: 700, $fz: 36px, $c: $dark-grey)
+
+    &__content
+        margin-top: 60px
+
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__product
+
+        background: center/cover no-repeat
+
+        position: relative
+
+        width: 570px
+        height: 250px
+
+        padding: 25px
+
+        &-tag
+            background-color: $light-blue
+
+            border-radius: 0 0 0 5px
+
+            padding: 5px 8px
+
+            position: absolute
+            top: 0
+            right: 0
+
+            @include font($ff: $mulish, $fw: 600, $fz: 12px, $c: $white)
+
+        &-name
+            @include font($ff: $mulish, $fw: 600, $fz: 22px, $c: $dark-grey)
+
+        &-text 
+            margin-top: 10px
+
+            max-width: 250px
+
+            @include font($ff: $mulish, $fw: 400, $fz: 13px, $c: $dark-grey)
+
+        &-row 
+            margin-top: 20px
+
+            display: flex
+            align-items: center
+            justify-content: flex-start
+
+        &-price 
+            margin-right: 20px
+
+            @include font($ff: $mulish, $fw: 700, $fz: 18px, $c: inherit)
+
+            & span:first-child
+                color: $green
+
+                margin-right: 10px
+
+            & span:last-child
+                color: $grey
+
+                text-decoration: line-through
+                
+
+        &-btn
+            padding: 6px 10px 
+
+            border: none
+            border-radius: 2px
+
+            background-color: $green
+            
+            cursor: pointer
+
+            @include font($ff: $mulish, $fw: 700, $fz: 12px, $c: $white)
+
+            &:hover 
+                filter: invert(5%)
+
+        &-date 
+            margin-top: 30px
+
+        &-circle 
+            margin-right: 20px
+
+            text-align: center
+
+            border-radius: 50%
+
+            background-color: $green
+
+            display: inline-flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+
+            width: 40px
+            height: 40px
+
+            padding: 6px 10px
+
+            @include font($ff: $rubik, $fw: 400, $fz: 6px, $c: $white)
+
+            & span
+
+                display: inline-block
+
+                margin-bottom: 3px
+
+                @include font($ff: $rubik, $fw: 500, $fz: 14px, $c: $white)
+
+        &-circle:last-child
+            margin-right: 0
+
+    &__product:nth-of-type(1)
+        background-image: url('../images/content/background-image-4.jpg')
+
+        margin-right: 30px
+
+    &__product:nth-of-type(2)
+        background-image: url('../images/content/background-image-5.jpg')
