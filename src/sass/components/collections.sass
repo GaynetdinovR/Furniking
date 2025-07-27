@@ -1,0 +1,57 @@
+.collections
+
+    display: grid
+    grid-template-columns: 655px 495px
+    grid-template-rows: 245px 245px
+    grid-gap: 18px
+
+    margin-top: 70px
+
+    margin: 75px auto auto 0
+
+    justify-content: center
+    justify-items: center
+    align-items: center
+
+    &__collection
+
+        padding: 40px 25px
+
+        background: center/cover no-repeat
+
+        &-title
+            @include font($ff: $mulish, $fw: 700, $fz: 22px, $c: $dark-grey)
+
+        &-text
+            margin-top: 10px
+            margin-bottom: 10px
+
+            @include font($ff: $mulish, $fw: 400, $fz: 20px, $c: $green)
+
+        &-read-more
+            @include font($ff: $mulish, $fw: 400, $fz: 16px, $c: $dark-grey)
+
+            &:hover
+                opacity: 0.8
+
+        &-arrow
+            width: 11px
+            object-fit: contain
+
+    &__collection:nth-child(1)
+        background-image: url(../images/content/background-image-1.jpg) 
+
+        width: 655px
+        height: 510px
+        grid-row: span 2
+
+    &__collection:nth-child(2)
+        background-image: url(../images/content/background-image-2.jpg) 
+
+    &__collection:nth-child(3)
+        background-image: url(../images/content/background-image-3.jpg) 
+
+    &__collection:nth-child(2),
+    &__collection:nth-child(3)
+        width: 495px
+        height: 245px

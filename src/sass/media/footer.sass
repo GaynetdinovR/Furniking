@@ -1,0 +1,53 @@
+@media screen and (min-width: $desktop-size-m1)
+    .footer__bottom-side
+        border-radius: 30px 30px 0 0
+
+@media screen and (max-width: $desktop-size-m1)
+    .footer__bottom-side
+        border-right: none
+        border-left: none
+
+@media screen and (max-width: $desktop-size-m3)
+    .footer__help,
+    .footer__store
+        margin-right: 75px
+    
+    .footer__left-side
+        margin-right: 45px
+
+@media screen and (max-width: $desktop-size-s1)
+    .footer__store
+        display: none
+
+    .footer__text
+        max-width: 220px
+        line-height: 1.5
+
+@media screen and (max-width: $tablet-size-m1)
+    .footer__content
+        flex-direction: column
+        text-align: center
+
+    .footer__help
+        margin-right: 0
+        margin-top: 30px
+    
+    .footer__left-side
+        margin-right: 0
+
+    .footer__supports
+        margin-top: 30px
+
+@media screen and (max-width: $tablet-size-s1)
+    .footer__bottom-side
+        flex-direction: column
+        text-align: center
+
+    .footer__copyright
+        margin-bottom: 15px
+
+@media screen and (max-width: $phone-size-m2)
+    .footer__link
+        margin-right: 15px
+    .footer__link:last-child
+        margin: 0

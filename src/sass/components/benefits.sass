@@ -1,0 +1,37 @@
+.benefits
+
+    margin: 70px auto 0
+    
+    width: 100%
+    max-width: 1440px
+
+    &__list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        width: 100%
+
+    &__item
+        display: grid
+        justify-items: flex-start
+        align-items: center
+        grid-template-columns: 60px 160px
+        grid-template-rows: 26px 26px
+        grid-gap: 2px 15px
+
+        &-img-wrap
+            width: 60px
+
+            grid-row: 2 span
+
+        &-img
+            max-width: 100%
+
+            object-fit: contain
+
+        &-title
+            @include font($ff: $rubik, $fw: 500, $fz: 20px, $c: $dark-grey)
+
+        &-text
+            @include font($ff: $rubik, $fw: 400, $fz: 14px, $c: $dark-grey)

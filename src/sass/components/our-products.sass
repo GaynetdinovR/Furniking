@@ -1,0 +1,137 @@
+.trending
+    margin-top: 120px
+
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    &__title
+
+
+.our-products
+    margin-top: 120px
+
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    &__title
+        @include font($ff: $mulish, $fw: 700, $fz: 36px, $c: $dark-grey)
+
+    &__nav
+        margin-top: 45px
+
+        &-list
+            display: flex
+            align-items: center
+            justify-content: center
+
+        &-item
+            margin-right: 70px
+
+        &-link
+            @include font($ff: $mulish, $fw: 600, $fz: 24px, $c: $grey)
+
+            cursor: default
+
+            &_active
+                color: $green
+
+            &:not(.trending-link_active)
+                cursor: pointer
+
+                &:hover
+                    color: $dark-grey
+                    opacity: 0.5
+
+        &-item:last-child
+            margin-right: 0
+
+    &__content
+        margin-top: 75px
+
+    &__bottom-side
+        display: flex
+        justify-content: flex-end
+        align-items: center
+
+        width: 90%
+
+        max-width: 1170px
+
+        margin-top: 55px
+
+    &__next-btn
+        padding: 12px 20px
+        margin-right: 140px
+
+        background-color: $green
+
+        border: none
+        border-radius: 2px
+
+        cursor: pointer
+
+        @include font($ff: $mulish, $fw: 600, $fz: 18px, $c: $white)
+
+        & img
+            width: 14px
+            height: auto
+
+            object-fit: contain
+
+            filter: brightness(0%) invert(100%)
+
+        &:hover
+            opacity: 0.9
+
+    &__input
+        @include font($ff: $mulish, $fw: 400, $fz: 18px, $c: $dark-grey)
+
+        & label
+            margin-right: 10px
+            margin-left: 10px
+
+        & input
+            padding: 8px 24px
+
+            border-radius: 2px
+            border: solid 1px $grey
+
+            max-width: 75px
+
+            text-align: center
+
+            font: inherit
+
+            font-size: 14px
+
+            &:focus
+                outline: 1px solid $green
+
+    &__controls
+        margin-left: 20px
+
+        background-color: $green
+
+        cursor: default
+
+    &__control
+        background-color: $green
+
+        border: none
+
+        cursor: pointer
+
+        padding: 8px 13px
+
+    &__control:first-child
+        padding-right: 6px 
+
+    &__control:last-child
+        padding-left: 6px 
+
+            
+        

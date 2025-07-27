@@ -1,0 +1,97 @@
+.reviews
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    margin-top: 120px
+
+    &__title
+        text-transform: uppercase
+
+        @include font($ff: $mulish, $fw: 700, $fz: 36px, $c: $dark-grey)
+
+    &__content
+        display: flex
+        justify-content: center
+        align-items: center
+
+        margin-top: 90px
+
+    &__control
+        border: none
+        background: transparent
+
+        cursor: pointer
+
+        &:hover
+            filter: invert(10%)
+
+    &__control:nth-child(1)
+        margin: 0 55px 0 0
+
+    &__control:nth-child(3)
+        margin: 0 0 0 55px
+
+    &__review
+        background-color: rgba($grey, 0.2)
+
+        width: 800px
+        height: 300px
+
+        border-radius: 10px
+
+        padding: 120px 55px 55px
+
+        position: relative
+
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+
+        text-align: center
+
+        &-avatar
+            width: 80px
+            height: 80px
+
+            position: absolute
+
+            transform: translateX(-50%)
+            left: 50%
+
+            top: -40px
+
+
+        &-avatar-img
+            border-radius: 50%
+
+            max-width: 100%
+            height: auto
+
+            object-fit: cover
+
+        &-quote
+
+        &-text
+            max-width: 565px
+
+            @include font($ff: $rubik, $fw: 400, $fz: 16px, $c: $dark-grey)
+
+        &-reviewer
+            display: flex
+            justify-content: center
+            align-content: center
+            flex-direction: column
+
+            margin-top: 30px
+
+            & span:first-child
+                @include font($ff: $rubik, $fw: 400, $fz: 24px, $c: $dark-grey)
+
+            & span:last-child
+                margin-top: 10px
+
+                @include font($ff: $rubik, $fw: 400, $fz: 16px, $c: $dark-grey)
+

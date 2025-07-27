@@ -1,0 +1,99 @@
+.footer
+    margin-top: 120px
+
+    &__content
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__left-side
+        margin-right: 90px
+
+    &__text
+        max-width: 320px
+
+        margin-top: 10px
+
+        line-height: 2
+        @include font($ff: $rubik, $fw: 400, $fz: 16px, $c: $dark-grey)
+
+    &__contacts
+        margin-top: 10px
+
+        &-list
+            display: inline-flex
+            justify-content: center
+            align-items: center
+
+        &-item
+            margin: 0 15px 
+
+        &-item:first-child
+            margin-left: 0
+
+        &-item:last-child
+            margin-right: 0
+
+        &-link
+            width: 20px
+            height: 20px
+
+            display: inline-flex
+            justify-content: center
+            align-content: center
+            & img 
+                object-fit: contain
+
+                max-width: 100%
+                height: auto
+
+            &:hover
+                filter: invert(70%)
+
+    &__nav
+
+        &-title
+            line-height: 2
+            @include font($ff: $rubik, $fw: 500, $fz: 18px, $c: $dark-grey)
+
+        &-link
+            line-height: 2
+            @include font($ff: $rubik, $fw: 400, $fz: 18px, $c: $dark-grey)
+
+            &:hover
+                opacity: 0.6
+
+    &__help
+        margin-right: 180px
+
+    &__store
+        margin-right: 180px
+
+    &__bottom-side
+        max-width: 1440px
+
+        margin: 50px auto 0
+        padding: 35px 50px
+
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        position: relative
+
+        border: 1px $grey solid
+        border-bottom: none
+
+    &__copyright
+        @include font($ff: $rubik, $fw: 400, $fz: 14px, $c: $dark-grey)
+
+    &__link
+        margin-right: 50px
+
+        @include font($ff: $rubik, $fw: 400, $fz: 14px, $c: $dark-grey)
+
+        &:hover
+            opacity: 0.8
+
+    &__link:last-child
+        margin: 0

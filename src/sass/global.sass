@@ -1,0 +1,152 @@
+body
+    overflow-x: hidden
+    
+.header__top, 
+.header__content,
+.content
+    padding-right: 135px
+    padding-left: 135px
+
+.arrow
+    border: 2px solid $black
+    border-top: none
+    border-left: none
+
+    width: 10px
+    height: 10px
+
+    &_down
+        transform: rotate(45deg)
+
+    &_right
+        transform: rotate(-45deg)
+        
+    &_left
+        transform: rotate(135deg)
+ 
+    &_white
+        border-color: $white
+
+    &_grey
+        border-color: $grey
+
+    &_large
+        border-width: 7px
+        border-style: solid
+        border-top: none
+        border-left: none
+
+        width: 30px
+        height: 30px
+
+.logo
+    display: inline-flex
+    justify-content: center
+    align-items: center
+
+    &__img-wrap
+        width: 32px
+        height: 40px
+
+        margin-right: 3px
+
+    &__img
+        max-width: 100%
+        
+        object-fit: contain
+
+    &__name
+        font-size: 24px
+        font-weight: 500
+        font-family: $rubik
+        color: $dark-grey
+
+.wrapper
+    display: grid
+
+    grid-template-columns: 265px 895px
+    grid-template-rows: 70px 440px
+
+    justify-content: center
+    
+    grid-gap: 10px
+
+    
+.product
+    &__img-wrap
+        position: relative
+        z-index: 1
+
+        width: 270px
+        height: 290px
+
+    &__tag
+
+        display: inline-block
+
+        padding: 4px 8px
+
+        border-radius: 0 0 5px 0
+
+        position: absolute
+        z-index: 2
+
+        @include font($ff: $mulish, $fw: 600, $fz: 12px, $c: $white)
+
+        &_blue
+            background-color: $light-blue 
+
+        &_green
+            background-color: $green 
+
+    &__img
+        object-fit: cover
+        max-width: 100%
+        
+    &__type
+        text-transform: uppercase
+
+        margin-top: 15px
+
+        @include font($ff: $mulish, $fw: 400, $fz: 14px, $c: $grey)
+
+    &__name
+        margin-top: 10px
+
+        @include font($ff: $rubik, $fw: 400, $fz: 20px, $c: $dark-grey)
+
+    &__bottom-side
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        margin-top: 10px
+
+    &__price
+        @include font($ff: $mulish, $fw: 700, $fz: 18px, $c: inherit)
+
+        & span:first-child
+            color: $green
+
+            margin-right: 5px
+
+        & span:last-child
+            color: $grey
+            text-decoration: line-through
+
+    &__rating
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__star
+        width: 10px
+        height: 10px
+
+        margin: 0 2px
+
+.products
+    display: grid
+    grid-template-columns: repeat(4, 1fr) 
+    grid-template-rows: repeat(2, 1fr) 
+    grid-gap: 50px 30px

@@ -1,0 +1,90 @@
+.our-articles
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    margin-top: 120px
+
+    &__title
+        text-transform: uppercase
+
+        @include font($ff: $mulish, $fw: 700, $fz: 36px, $c: $dark-grey)
+
+    &__content
+        display: grid
+        grid-template-rows: 1fr 1fr
+        grid-template-columns: 1fr 1fr
+        grid-gap: 22px 26px
+
+        margin-top: 60px
+
+
+    &__article
+        background: center/cover no-repeat 
+
+        padding: 30px 45px
+
+        width: 570px
+        height: 460px
+
+        border-radius: 10px
+
+        display: flex
+        justify-content: flex-end
+        flex-direction: column
+
+        &-tag
+            display: inline-flex
+            align-items: center
+            
+            text-transform: uppercase
+
+            background-color: $white
+
+            padding: 5px 10px
+
+            border-radius: 3px
+
+            @include font($ff: $rubik, $fw: 400, $fz: 12px, $c: $green)
+
+        &-tag-img
+            width: 13px
+            height: 13px
+
+            object-fit: contain
+
+        &-date
+            display: inline-flex
+            align-items: center
+
+            margin-left: 5px
+
+            height: 23px
+
+            @include font($ff: $mulish, $fw: 400, $fz: 14px, $c: $white)
+
+        &-title
+            margin-top: 20px
+
+            @include font($ff: $mulish, $fw: 700, $fz: 39px, $c: $white)
+
+        &-read-more
+            margin-top: 35px
+
+            @include font($ff: $mulish, $fw: 600, $fz: 14px, $c: $white)
+
+            &:hover
+                opacity: 0.8
+
+    &__article:nth-child(1)
+        background-image: url(/images/content/background-image-6.jpg)
+
+    &__article:nth-child(2)
+        background-image: url(/images/content/background-image-7.jpg)
+
+    &__article:nth-child(3)
+        background-image: url(/images/content/background-image-8.jpg)
+
+    &__article:nth-child(4)
+        background-image: url(/images/content/background-image-9.jpg)

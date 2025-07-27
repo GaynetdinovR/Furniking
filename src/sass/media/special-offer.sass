@@ -1,0 +1,24 @@
+@media screen and (max-width: $desktop-size-m3)
+    .special-offer__content
+        flex-direction: column
+        
+    .special-offer__product:nth-of-type(1)
+        margin: 0 0 15px 0
+
+    .special-offer__product:nth-of-type(2)
+        margin: 15px 0 0 0
+
+@media (min-width: $phone-size-m2) and (max-width: $tablet-size-s2)
+    .special-offer__product
+        background: right/cover no-repeat
+        width: 350px
+
+@media screen and (max-width: $phone-size-m2)
+    .special-offer__product
+        width: 300px
+
+    .special-offer__content
+        margin-top: 30px
+
+    .special-offer__title
+        font-size: 30px

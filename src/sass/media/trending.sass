@@ -1,0 +1,68 @@
+@media screen and (max-width: $desktop-size-m3)
+    .trending__product-img-wrap
+        width: 210px
+        height: 220px
+
+    .trending__content
+        // grid-gap: 30px 10px
+        margin-top: 35px
+
+    .trending__product-name
+        font-size: 16px
+
+    .trending__product-price
+        font-size: 14px
+
+    .trending__nav-link
+        font-size: 20px
+
+    .trending__nav
+        margin-top: 30px
+
+    .trending__title
+        font-size: 30px
+
+// @media (min-width: $tablet-size-m1) and (max-width: $desktop-size-s1)
+//     .trending__content
+//         grid-template-columns: repeat(6, 105px)
+//         grid-template-rows: repeat(3, 1fr)
+
+//         justify-items: center
+
+//     .trending__product:nth-child(7)
+//         grid-column: 2 / span 2
+
+//         max-width: 210px
+
+//     .trending__product:nth-child(8)
+//         grid-column: 4 / span 2
+
+//         max-width: 210px
+
+//     @for $i from 1 through 6
+//         .trending__product:nth-child(#{$i})
+//             grid-column: 2 span
+
+@media screen and (max-width: $tablet-size-m1)
+    // .trending__content
+    //     grid-template-columns: repeat(2, 1fr)
+    //     grid-template-rows: repeat(4, 1fr)
+
+    .trending__nav-item
+        margin-right: 30px
+
+    .trending__nav-link
+        font-size: 18px
+
+@media screen and (max-width: $phone-size-l1)
+    // .trending__content
+    //     grid-template-columns: repeat(1, 1fr)
+    //     grid-template-rows: repeat(8, 1fr)
+    
+    .trending__nav-list
+        flex-direction: column
+
+        text-align: center
+
+    .trending__nav-item
+        margin: 5px 0 5px

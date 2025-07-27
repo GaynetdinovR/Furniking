@@ -1,0 +1,162 @@
+.header
+    max-width: 1440px
+
+    margin: 0 auto
+
+    &__top
+        background-color: $green
+        
+        padding-top: 16px
+        padding-bottom: 16px
+
+        display: flex
+        justify-content: space-between
+
+        @include font($ff: $rubik, $fw: 400, $fz: 16px, $c: $white)
+
+        &-language
+            border: none
+            background: transparent
+            padding: 0
+
+            display: inline-flex
+            align-items: center
+            justify-content: center
+
+            margin-right: 15px
+
+            cursor: pointer
+
+            & .arrow
+                margin-bottom: 5px
+                margin-left: 5px
+
+            @include font($ff: $rubik, $fw: 400, $fz: 16px, $c: $white)
+
+            &:hover
+                filter: invert(10%)
+
+                & .arrow
+                    filter: invert(10%)
+
+        &-login
+            margin-left: 15px
+
+            @include font($ff: $rubik, $fw: 400, $fz: 16px, $c: $white)
+
+            &:hover
+                filter: invert(10%)
+
+    &__content
+        padding-bottom: 20px
+        padding-top: 20px
+
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__logo
+
+    &__search
+        border-radius: 10px
+        border: 2px $green solid
+
+        position: relative
+
+        display: inline-block
+
+        &-input
+            padding: 15px 25px
+            min-height: 45px
+
+            min-width: 400px
+
+            outline: none
+
+            border-radius: 10px
+            border: none
+
+        &-select
+            padding: 15px 10px
+
+            border: none
+            outline: none
+            
+            padding-right: 0
+
+            margin-right: 15px
+
+            cursor: pointer
+
+            @include font($ff: $rubik, $fw: 400, $fz: 14px, $c: $dark-grey)
+
+        &-button
+            padding: 16px 20px
+
+            border-radius: 0 6px 6px 0
+            border: none
+
+            background-color: $green
+
+            cursor: pointer
+
+            &::before
+                content: ''
+
+                position: absolute
+
+                top: 0
+                bottom: 0
+
+                width: 1px 
+                height: 100%
+
+                background-color: $grey
+
+                right: 190px
+
+            &:hover
+                filter: invert(5%)
+
+
+
+        &-img
+            max-width: 100%
+
+            object-fit: contain
+
+    &__user
+
+        &-list
+            display: flex
+            justify-content: center
+            align-items: center
+
+        &-item
+            margin: 0 10px
+
+        &-link
+            width: 30px
+            &:hover
+                filter: invert(50%)
+
+        &-img
+            max-width: 100%
+
+            object-fit: contain
+
+        &-item:nth-child(1)
+            position: relative
+            &::after
+                content: '4'
+
+                border-radius: 50%
+                padding: 1px 3px
+
+                background-color: $green
+
+                position: absolute
+                top: -5px
+                right: -5px
+
+                @include font($ff: $rubik, $fw: 400, $fz: 12px, $c: $white)
